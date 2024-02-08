@@ -1,10 +1,13 @@
 {
+    "homepage": "https://cooolbabu.github.io/NextReviews03/",
     "name": "next-reviews",
     "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@heroicons/react": "^2.1.1",
@@ -17,6 +20,7 @@
     "devDependencies": {
         "@tailwindcss/typography": "github:tailwindcss/typography",
         "autoprefixer": "^10.4.17",
+        "gh-pages": "^6.1.1",
         "postcss": "^8.4.33",
         "tailwindcss": "^3.4.1"
     }
