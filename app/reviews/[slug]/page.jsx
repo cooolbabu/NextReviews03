@@ -4,6 +4,8 @@ import { getReview, getSlugs } from "@/lib/reviews";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+//export const revalidate = 30; // seconds
+
 export async function generateStaticParams() {
   const slugs = await getSlugs();
   //console.log("Generate Static Params(Slugs.Page.jsx):", slugs);

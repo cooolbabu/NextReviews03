@@ -98,3 +98,4 @@ add scripts to package.json
 
 - Dynamic params and dynamic rendering (force-dynamic)
 - Page Not Found (notFound)
+- Background revalidation and on-demand revalidation
