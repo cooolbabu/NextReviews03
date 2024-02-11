@@ -4,7 +4,7 @@ import { getReviews } from "@/lib/reviews";
 import Link from "next/link";
 
 export default async function HomePage() {
-  const reviews = await getReviews(3);
+  const { reviews, pageCount } = await getReviews(3);
   //console.log("Featured review(HomePage): ", reviews);
   return (
     <>
