@@ -32,6 +32,8 @@ npm install next react react-dom
 npm i gray-matter
 npm -i marked
 npm install -D tailwindcss @tailwindcss/typography postcss autoprefixer
+npm install eslint eslint-config-next --save-dev
+npm install qs
 
 
 ```
@@ -70,3 +72,29 @@ add scripts to package.json
 - Reviews.js - Services to get data
 - Headings - Pre-defined component
 - ShareLink - Usefull utility - 'use client'
+
+## Images
+
+- Image component can be used for optimization. But cannot use static pages afterwards. Configure next.config.js
+- Use NextJs Image component. Set fetch priority
+
+### Starpi
+
+```
+  npm install strapi to install strapi
+  npm run develop
+  npm run build
+  npm start
+
+  admin@eample.com
+  Admin123
+```
+
+## Testing REST Services in Javascript
+
+## Install ESLint to check code
+
+### Other stuff
+
+- Dynamic params and dynamic rendering (force-dynamic)
+- Page Not Found (notFound)
