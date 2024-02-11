@@ -34,6 +34,7 @@ npm -i marked
 npm install -D tailwindcss @tailwindcss/typography postcss autoprefixer
 npm install eslint eslint-config-next --save-dev
 npm install qs
+npm install @headlessui/react
 
 
 ```
