@@ -35,6 +35,7 @@ npm install -D tailwindcss @tailwindcss/typography postcss autoprefixer
 npm install eslint eslint-config-next --save-dev
 npm install qs
 npm install @headlessui/react
+npm install server-only
 
 
 ```
@@ -100,3 +101,8 @@ add scripts to package.json
 - Dynamic params and dynamic rendering (force-dynamic)
 - Page Not Found (notFound)
 - Background revalidation and on-demand revalidation
+
+### Server only
+
+- npm install server-only
+- Make all calls server only
