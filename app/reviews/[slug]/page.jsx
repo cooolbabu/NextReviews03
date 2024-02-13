@@ -24,8 +24,8 @@ export async function generateMetaData({ params: { slug } }) {
   };
 }
 export default async function ReviewPage({ params: { slug } }) {
-  //console.log("Review Page", slug);
   const review = await getReview(slug);
+  //console.log("Review Page", slug);
 
   if (!review) {
     notFound();
