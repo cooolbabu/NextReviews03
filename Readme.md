@@ -45,6 +45,8 @@ npm install server-only
 ```
 npx tailwindcss init -postcss
 add scripts to package.json
+npx prisma init --datasource-provider sqlite
+
 ```
 
 ## Site Map
@@ -106,3 +108,13 @@ add scripts to package.json
 
 - npm install server-only
 - Make all calls server only
+
+- Caching of static pages is a problem. revalidatePath(next/cahce) will solve this problem
+- Progressive enhancement will even without javascript
+- Client-side validation
+  html required and maxLength
+
+### Create Prisma DB
+
+- Create a model in schema.prisma
+- npx prisma db push - Creates a database in the primsa folder
