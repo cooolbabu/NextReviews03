@@ -118,3 +118,4 @@ npx prisma init --datasource-provider sqlite
 
 - Create a model in schema.prisma
 - npx prisma db push - Creates a database in the primsa folder
+- Prisma client instances created over and over again. Create singleton
