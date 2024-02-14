@@ -48,7 +48,7 @@ export default function CommentForm({ slug, title }) {
           className="border px-2 py-1 rounded w-full"
         />
       </div>
-      {Boolean(cfState.error.isError) && (
+      {Boolean(cfState.error) && (
         <p className="text-red-700 text-">{cfState.error.message}</p>
       )}
       <button

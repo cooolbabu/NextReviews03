@@ -1,11 +1,13 @@
 import CommentForm from "@/components/CommentForm";
 import CommentList from "@/components/CommentList";
+import CommentListSkeleton from "@/components/CommentListSkeleton";
 import Heading from "@/components/Heading";
 import ShareLinkButton from "@/components/ShareLinkButton";
 import { getReview, getSlugs } from "@/lib/reviews";
 import { ChatBubbleBottomCenterTextIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 //export const revalidate = 30; // seconds
 
@@ -58,7 +60,11 @@ export default async function ReviewPage({ params: { slug } }) {
           Comments
         </h2>
         <CommentForm slug={slug} title={review.title} />
-        <CommentList slug={slug} />
+
+        {/* Use Suspense for streamming */}
+        <Suspense fallback={<CommentListSkeleton />}>
+          <CommentList slug={slug} />
+        </Suspense>
       </section>
     </>
   );
