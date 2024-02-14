@@ -29,6 +29,8 @@ export async function generateMetaData({ params: { slug } }) {
   };
 }
 export default async function ReviewPage({ params: { slug } }) {
+  // simulate delay 10 seconds
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
   const review = await getReview(slug);
   //console.log("Review Page", slug);
 
