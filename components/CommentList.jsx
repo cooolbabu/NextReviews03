@@ -7,9 +7,9 @@ const commentsL = [
   { id: "3", user: "Charlie", message: "Can't stop playing" },
 ];
 
-//   className="border-b px-3 py-2 last:border-none odd:bg-orange-100"
+// className="border-b px-3 py-2 last:border-none odd:bg-orange-100"
 // className="flex gap-3 pb-1 text-slate-500"
-//className = "italic";
+// className = "italic";
 export default async function CommentList({ slug }) {
   const comments = await getComments(slug);
 
